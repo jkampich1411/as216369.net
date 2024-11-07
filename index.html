@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, initial-scale=1.0">
+    <title>as216369.net</title>
+
+    <style>
+        :root {
+            --foreground-color: #000000;
+            --background-color: #eeebec;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --background-color: #111413;
+                --foreground-color: #ffffff;
+            }
+        }
+
+        body {
+            color: var(--foreground-color);
+            background-color: var(--background-color);
+
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+
+            padding-top: 1em;
+
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.2em;
+        }
+
+        p, li { font-size: 0.8em; }
+
+
+        a { color: #238ffc; }
+
+
+        .header {
+            flex: auto;
+            flex-direction: row;
+        }
+
+        .no-vertical-padding-pre pre {
+            padding-top: 0px;
+            padding-bottom: 0px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .center {
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        
+        .subheading {
+            padding-top: 1.2em;
+        }
+
+        .content {
+            margin-left: 2em;
+        }
+
+        ul li::marker {
+            content: '— ';
+        }
+
+        </style>
+
+</head>
+<body>
+    <header>
+        <div style="float: left;" class="no-vertical-padding-pre">
+            <pre>aut-num: <a href="https://apps.db.ripe.net/db-web-ui/lookup?source=ripe&key=AS216369&type=aut-num" target="__blank">AS216369</a></pre>
+            <pre>as-set: <a href="https://apps.db.ripe.net/db-web-ui/lookup?source=ripe&key=AS216369:AS-JKDEV-OUT&type=as-set" target="__blank">AS216369:AS-JKDEV-OUT</a></pre>
+            <pre>other: <a href="https://as216369.peeringdb.com" target="__blank">PeeringDB</a>, <a href="https://bgp.tools/AS216369" target="__blank">BGP.Tools</a></pre>
+        </div>
+
+        <div style="text-align: right;" class="no-vertical-padding-pre">
+            <pre>AS216369 - jkdev carrier</pre>
+            <pre>NOC: <a href="mailto:noc@jkdev.io">noc@jkdev.io</a></pre>
+            <pre>Abuse: <a href="mailto:abuse@jkdev.io">abuse@jkdev.io</a></pre>
+            <pre>Contact: <a href="mailto:c@jkdev.io">c@jkdev.io</a></pre>
+        </div>
+        
+        <h5 class="center">AS216369 - jkdev carrier network</h5>
+
+        <h5 class="subheading">Point of Contact</h5>
+        <div class="content">
+            <p>We are contactable via e-mail at <a href="mailto:noc@jkdev.io">noc@jkdev.io</a>. It is monitored at least 18 hours a day, 7 days a week.</p>
+            <p>If we have messed something up tremendously, please contact us directly there.</p>
+            <p>If you receive malicious requests from our network or our clients, please send an e-mail directly to <a href="mailto:abuse@jkdev.io">abuse@jkdev.io</a>.</p>
+        </div>
+
+        <h5 class="subheading">Peering</h5>
+        <div class="content">
+            <p>We have an open peering policy and peer at physical IXPs. Check out our <a href="https://as216369.peeringdb.com" target="__blank">PeeringDB</a> entry to see up-to-date information.</p>
+            <p>Our peering requirements are:</p>
+            <ul>
+                <li>Public ASN and a PeeringDB entry for it</li>
+                <li>BGP-capable router connected to a physical IXP&apos;s peering VLAN</li>
+                <li>RPKI-filtering preferred, <b>at least</b> IRR filtering</li>
+                <li>Have a reasonably reachable POC, <b>at least</b> a NOC e-mail address</li>
+                <li>No Tunnels, without exceptions</li>
+            </ul>
+            <p>If you wish to proceed, send us an e-mail at <a href="mailto:noc@jkdev.io">noc@jkdev.io</a>.</p>
+            <p>If we are already peers over IXP route-servers, please also include why you want to establish a direct BGP session.</p>
+        </div>
+
+        <h5 class="subheading">How our traffic gets to you</h5>
+        <div class="content">
+            <a href="https://bgp.tools/as/216369#connectivity" target="__blank">
+                <img src="https://bgp.tools/pathimg/rt-2a04:9307:10::_44" style="width: 100%" />
+            </a>
+        </div>
+    </header>
+</body>
+</html>
