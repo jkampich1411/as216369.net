@@ -101,21 +101,41 @@
             <p>We have an open peering policy and peer at physical IXPs. Check out our <a href="https://as216369.peeringdb.com" target="__blank">PeeringDB</a> entry to see up-to-date information.</p>
             <p>Our peering requirements are:</p>
             <ul>
-                <li>Public ASN and a PeeringDB entry for it.</li>
-                <li>BGP-capable router connected to a physical IXP&apos;s peering VLAN.</li>
-                <li>RPKI-filtering preferred, <b>at least</b> IRR filtering.</li>
-                <li>Have a reasonably reachable POC, <b>at least</b> a NOC e-mail address.</li>
-                <li>No Tunnels, without exceptions.</li>
-                <li>Single-stack IPv4 peerings are unacceptable.</li>
+                <li>Public ASN and a PeeringDB entry for it</li>
+                <li>BGP-capable router connected to a physical IXP&apos;s peering VLAN</li>
+                <li>RPKI-filtering preferred, <b>at least</b> IRR filtering</li>
+                <li>Have a reasonably reachable POC, <b>at least</b> a NOC e-mail address</li>
+                <li>No Tunnels, without exceptions</li>
             </ul>
             <p>If you wish to proceed, send us an e-mail at <a href="mailto:noc@jkdev.io">noc@jkdev.io</a>.</p>
             <p>If we are already peers over IXP route-servers, please also include why you want to establish a direct BGP session.</p>
+            
+            <p>Note: Peerings over PNIs are currently not possible.</p>
         </div>
 
-        <h5 class="subheading" id="propagation">How our traffic gets to you</h5>
+        <h5 id="ixps" class="subheading">Our IXP Presences</h5>
+        <div class="content">
+            <ul>
+                <li>
+                    <a href="https://vix.at" target="__blank">Vienna Internet eXchange</a>
+                    <br /><br />
+                    2001:7f8:30:0:1:1:21:6369 / 193.203.0.101<br />
+                    Link Speed: 500M
+                </li>
+                <br />
+                <li>
+                    <a href="https://locix.online" target="__blank">LocIX Internet Exchange</a>
+                    <br /><br />
+                    2001:7f8:f2:e1:0:21:6369:1 / 185.1.167.226<br />
+                    Link Speed: 1G
+                </li>
+            </ul>
+        </div>
+
+        <h5 id="propagation" class="subheading">How our traffic gets to you</h5>
         <div class="content">
             <a href="https://bgp.tools/as/216369#connectivity" target="__blank">
-                <img src="https://bgp.tools/pathimg/rt-2a04:9307:10::_44" style="width: 100%" />
+                <img loading="lazy" src="https://bgp.tools/pathimg/rt-2a04:9307:10::_44" style="width: 100%" />
             </a>
         </div>
     </header>
