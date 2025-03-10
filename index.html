@@ -56,7 +56,7 @@
             margin-right: auto;
             text-align: center;
         }
-        
+
         .subheading {
             padding-top: 1.2em;
         }
@@ -68,9 +68,22 @@
         ul li::marker {
             content: '— ';
         }
+    </style>
+    <script>
+        // mail protection
+        // come on bots, at least scan RIPE not the fucking website :c
+        const DOMAIN = "jkdev.io";
+        window.onload =  () => {
+            let elements = document.querySelectorAll('a#mailprot');
+            for(let element of elements) {
+                let user = element.getAttribute("href");  // read user part from field
+                if(user.startsWith("mailto:")) continue;  // dont do this twice
 
-        </style>
-
+                let mail = `${user}@${DOMAIN}`;  // construct
+                element.setAttribute("href", `mailto:${mail}`);  // save
+            }
+        };
+    </script>
 </head>
 <body>
     <header>
@@ -82,18 +95,18 @@
 
         <div style="text-align: right;" class="no-vertical-padding-pre">
             <pre>AS216369 - jkdev carrier</pre>
-            <pre>NOC: <a href="mailto:noc@jkdev.io">noc＠jkdev.io</a></pre>
-            <pre>Abuse: <a href="mailto:abuse@jkdev.io">abuse＠jkdev.io</a></pre>
-            <pre>Contact: <a href="mailto:c@jkdev.io">c＠jkdev.io</a></pre>
+            <pre>NOC: <a href="noc" id="mailprot">noc＠jkdev.io</a></pre>
+            <pre>Abuse: <a href="abuse" id="mailprot">abuse＠jkdev.io</a></pre>
+            <pre>Contact: <a href="c" id="mailprot">c＠jkdev.io</a></pre>
         </div>
         
         <h5 class="center">AS216369 - jkdev carrier network</h5>
 
         <h5 class="subheading" id="poc">Point of Contact</h5>
         <div class="content">
-            <p>We are contactable via e-mail at <a href="mailto:noc@jkdev.io">noc＠jkdev.io</a>. It is monitored at least 18 hours a day, 7 days a week.</p>
+            <p>We are contactable via e-mail at <a href="noc" id="mailprot">noc＠jkdev.io</a>. It is monitored at least 18 hours a day, 7 days a week.</p>
             <p>If we have messed something up tremendously, please contact us directly there.</p>
-            <p>If you receive malicious requests from our network or our clients, please send an e-mail directly to <a href="mailto:abuse@jkdev.io">abuse＠jkdev.io</a>.</p>
+            <p>If you receive malicious requests from our network or our clients, please send an e-mail directly to <a href="abuse" id="mailprot">abuse＠jkdev.io</a>.</p>
         </div>
 
         <h5 class="subheading" id="peer">Peering</h5>
@@ -107,7 +120,7 @@
                 <li>Have a reasonably reachable POC, <b>at least</b> a NOC e-mail address</li>
                 <li>No Tunnels, without exceptions</li>
             </ul>
-            <p>If you wish to proceed, send us an e-mail at <a href="mailto:noc@jkdev.io">noc@jkdev.io</a>.</p>
+            <p>If you wish to proceed, send us an e-mail at <a href="noc" id="mailprot">noc＠jkdev.io</a>.</p>
             <p>If we are already peers over IXP route-servers, please also include why you want to establish a direct BGP session.</p>
             
             <p>Note: Peerings over PNIs are currently not possible.</p>
