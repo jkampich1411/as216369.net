@@ -1,4 +1,5 @@
 # self published IP geolocation data according to rfc8805 (published at https://as216369.net/geofeed.csv),country,subdiv,city,postcode
 2a04:9307:10::/44,AT,AT-9,Vienna,1010
+2a04:9307:1a::44:0/112,GB,GB-CYM,,
 2a05:dfc1:d100::/40,AT,AT-9,Vienna,1010
 92.60.12.12/30,AT,AT-9,Vienna,1010
