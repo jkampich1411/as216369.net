@@ -1,0 +1,14 @@
+[
+  {
+    "pfx": "2a05:dfc1:d100::/48",
+    "role": "customers"
+  },
+  {
+    "pfx": "2a04:9307:10::/44",
+    "role": "infrastructure"
+  },
+  {
+    "pfx": "92.60.12.12/30",
+    "role": "infrastructure"
+  }
+]
